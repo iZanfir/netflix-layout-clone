@@ -30,8 +30,173 @@ img {
 :root {
   --red: #e50914;
   --white: #fff;
+  --black: #000;
   --gray-light: #999;
   --gray-txt: #8c8c8c;
   --gray-bg: #333;
   --blue: #0071eb;
+}
+
+html {
+  height: 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+
+  background-color: var(--black);
+  color: var(--gray-txt);
+}
+
+/* || Header styles */
+.site-header {
+  max-width: 100%;
+  height: 60px;
+
+  /* border-bottom: 1px solid white; */
+}
+
+.svg-netflix-logo {
+  width: 75px;
+  margin-top: 20px;
+  margin-left: 10px;
+
+  fill: var(--red);
+}
+
+/* || Card styles */
+.signup-card {
+  margin-top: 5px;
+  padding: 0 15px;
+}
+
+.card-top__title {
+  margin-bottom: 30px;
+
+  font-size: 2rem;
+  color: var(--white);
+}
+
+/* || Login styles */
+.login-container {
+  max-width: 100%;
+  height: 50px;
+
+  position: relative;
+
+  background-color: var(--gray-bg);
+  border-radius: 5px;
+}
+
+.login-container:first-of-type {
+  margin-bottom: 15px;
+}
+
+.login-container__label {
+  padding-left: 20px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.login-container__label--onFocus {
+  font-size: 0.7rem;
+  top: 25%;
+}
+
+.login-container__input {
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px 0 20px;
+
+  background-color: transparent;
+  color: var(--white);
+  font-size: 1rem;
+
+  outline: none;
+}
+
+.login-container__input:focus {
+  filter: brightness(1.3);
+}
+
+.submit-button {
+  width: 100%;
+  height: 50px;
+
+  margin-top: 40px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.save-login {
+  width: 100%;
+  margin-top: 15px;
+  word-wrap: break-word;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #b3b3b3;
+}
+
+.save-login__container {
+  display: flex;
+  align-items: center;
+  /* gap: 5px; */
+  flex-wrap: wrap;
+}
+
+.checkbox__save-login--hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.checkbox-container {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+
+  position: relative;
+}
+
+.checkbox-container__box {
+  font-size: 1.15rem;
+  color: #737373;
+  background-color: #737373;
+  border-radius: 3px;
+}
+
+.checkbox-container__check {
+  width: 18px;
+  height: 18px;
+
+  position: absolute;
+  top: 0;
+  left: 1px;
+
+  font-size: 1rem;
+  line-height: 1.15rem;
+  font-weight: bold;
+  background-color: transparent;
+  color: var(--black);
+}
+
+.hidden {
+  visibility: hidden;
+  /* display: block; */
 }
