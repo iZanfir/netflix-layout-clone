@@ -1,0 +1,37 @@
+/* || Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* || General styles setup */
+
+:root {
+  --red: #e50914;
+  --white: #fff;
+  --gray-light: #999;
+  --gray-txt: #8c8c8c;
+  --gray-bg: #333;
+  --blue: #0071eb;
+}
