@@ -19,9 +19,11 @@ function addFocus(e) {
 }
 
 function toggleFocusClassName(e) {
-  $loginLabels.forEach(label => {
-    if (label.htmlFor === e.target.name) {
-      label.classList.toggle("login-container__label--onFocus");
-    }
-  });
+  if (e.target.value.length === 0) {
+    $loginLabels.forEach(label => {
+      if (label.htmlFor === e.target.name) {
+        label.classList.toggle("login-container__label--onFocus");
+      }
+    });
+  }
 }

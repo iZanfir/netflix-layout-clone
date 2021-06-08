@@ -5,13 +5,7 @@ const $checkbox = document.querySelector(".checkbox__save-login--hidden");
 $checkboxContainer.addEventListener("click", toggleChecked);
 
 function toggleChecked() {
-  $checkIcon.classList.toggle("hidden");
+  $checkIcon.classList.toggle("checkbox-container__check--hidden");
 
-  const value = $checkbox.getAttribute("value");
-
-  if (value === "false") {
-    $checkbox.setAttribute("value", true);
-  } else {
-    $checkbox.setAttribute("value", false);
-  }
+  $checkbox.toggleAttribute("checked");
 }
