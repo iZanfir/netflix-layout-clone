@@ -25,10 +25,10 @@
       </a>
     </header>
 
-    <main>
+    <main class="main-container">
       <section class="signup-card">
-        <div class="card-top">
-          <h2 class="card-top__title">Entrar</h2>
+        <div class="card">
+          <h2 class="card__title">Entrar</h2>
 
           <div class="login-container">
             <label for="user-login" class="login-container__label"
@@ -50,23 +50,64 @@
                 <input
                   type="checkbox"
                   name="save-login"
-                  value="false"
                   class="checkbox__save-login--hidden"
                 />
                 <span class="material-icons-outlined checkbox-container__box"
                   >check_box_outline_blank</span
                 >
-                <span class="material-icons-outlined checkbox-container__check hidden">done</span>
+                <span class="material-icons-outlined checkbox-container__check checkbox-container__check--hidden">done</span>
               </div>
               <p class="save-login__text">Lembre-se de mim</p>
             </div>
 
             <a href="$">Precisa de ajuda?</a>
           </div>
+
+          <div class="facebook">
+            <div class="facebook-icon">
+              <img src="./assets/facebook.svg" alt="Facebook logo" />
+            </div>
+            
+            <span class="facebook__text">Conectar com Facebook</span>
+          </div>
+
+          <p class="sign-now__text">Novo por aqui? <a href="$" class="sign-now__link">Assine agora</a></p>
+          
+          <p class="recaptcha-notification__text">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="$" class="recaptcha-notification__link">Saiba mais.</a></p>
+        </div>
+
         </div>
       </section>
     </main>
 
+    <footer class="site-footer">
+      <div class="site-footer-wrapper">
+        <header class="site-footer__header">
+          <p>Duvidas? Ligue <a href="tel:+0800-761-4631">0800-761-4631</a></p>
+        </header>
+  
+        <nav class="footer-nav-container">
+          <ul class="footer-nav">
+            <li class="footer-nav__item">Perguntas frequentes</li>
+            <li class="footer-nav__item">Centro de ajuda</li>
+            <li class="footer-nav__item">Termos de uso</li>
+            <li class="footer-nav__item">Privacidade</li>
+            <li class="footer-nav__item">Preferências de cookies</li>
+            <li class="footer-nav__item">Informações corporativas</li>
+          </ul>
+        </nav>
+  
+        <div class="lang">
+          <span class="material-icons-outlined lang__icon">
+            language
+          </span>
+          <select name="lang-selector" class="lang__switcher">
+            <option value="pt-br" disable>Português</option>
+            <option value="en-us">Inglês</option>
+          </select>
+        </div>
+      </div>
+    </footer>
     <script src="./checkboxIcon.js"></script>
     <script src="./labelAnimation.js"></script>
   </body>
