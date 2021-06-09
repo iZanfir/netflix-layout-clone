@@ -1,5 +1,7 @@
 # Simple Netflix Layout Clone
 
+See in [codesandbox](https://codesandbox.io/s/lcuuu).
+
 ## _Desktop_
 
 ![image](https://user-images.githubusercontent.com/75179881/121134841-4226cf80-c80a-11eb-83b5-e354f5709272.png)
