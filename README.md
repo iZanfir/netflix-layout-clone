@@ -1,5 +1,7 @@
 # Simple Netflix Layout Clone
 
+Apenas uma cópia de testes da página de login da [Netflix](https://www.netflix.com/br/login)
+
 ## _Desktop_
 
 ![image](https://user-images.githubusercontent.com/75179881/121134841-4226cf80-c80a-11eb-83b5-e354f5709272.png)
